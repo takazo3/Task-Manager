@@ -72,7 +72,7 @@ const EditTaskForm: React.FC<EditTaskFormProps> = ({ task }) => {
             checked={hasDone}
             onChange={(e) => setHasDone(e.target.checked)}
             className="mr-2 w-4 h4" />
-          <label htmlFor="hasDone" className="text-sm">Make this "Done"</label>
+          <label htmlFor="hasDone" className="text-sm">Make this &quot;Done&quot;</label>
         </div>
         <SubmitButton />
         { state.error && <div className="mt-4 text-red-500 text-sm">{state.error}</div>}
